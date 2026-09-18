@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Product Manager</h2>
+
+<!-- Form to Add / Edit a product -->
+<div class="form-box">
+    <input type="hidden" id="productId">
+
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="price" placeholder="Price" step="0.01">
+    <input type="text" id="category" placeholder="Category">
+    <input type="number" id="quantity" placeholder="Quantity">
+
+    <button onclick="saveProduct()">Save Product</button>
+    <button onclick="resetForm()">Clear</button>
+</div>
+
+<!-- Table to display products -->
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Qty</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="productTable">
+    <!-- Rows inserted here by script.js -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
